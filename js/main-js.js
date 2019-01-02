@@ -9,6 +9,10 @@ $(document).ready(function() {
         dots: true
     });
 
+    $('.menu-dropdown').on('click', function() {
+		$('.menu-dropdown>ul').slideToggle();
+    });
+    
     $('.menu-btn').on('click', function() {
 		$(this).toggleClass('menu-btn_active');
 		$('.top-menu').slideToggle();

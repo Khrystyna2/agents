@@ -320,6 +320,46 @@ body {
     color: #84be44;
 }
 
+.top-menu>li .menu-dropdown {
+    color: #84be44;
+    position: relative;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-dropdown ul {
+    color: #4d4d4d;
+    background-color: #fff;
+    padding: 16px;
+    position: absolute;
+    top: 110%;
+    left: -40%;
+    z-index: 2;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .6);
+    display: none;
+    width: 180px;
+    line-height: normal;
+}
+
+.menu-dropdown ul li{
+    margin-bottom: 8px;
+}
+
+.top-menu>li .menu-dropdown > img{
+    width: 18px;
+    margin-left: 4px;
+}
+
+.top-menu>li .menu-dropdown::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #84be44;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+}
+
 .first-screen-index {
     width: 80%;
     margin: 13.1vmin auto 0;
@@ -811,6 +851,10 @@ body {
         font-size: .9rem;
         justify-content: space-between;
     }
+
+    .menu-dropdown ul {
+        width: 150px;
+    }
     .section-about-us__image::after {
         bottom: -15px;
         right: -15px;
@@ -960,6 +1004,16 @@ body {
 
     .top-menu > li {
         margin: 14px 0;
+    }
+
+    .menu-dropdown ul {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .top-menu>li .menu-dropdown::after {
+        width: 0;
     }
 
     #index .header {
