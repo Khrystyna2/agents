@@ -228,7 +228,7 @@ body {
 
 .title-section {
     font-weight: 700;
-    font-size: 3.6rem;
+    font-size: 2.6rem;
     color: #4d4d4d;
     text-transform: uppercase;
     margin-bottom: 35px;
@@ -236,7 +236,7 @@ body {
 
 .title-page {
     font-weight: 700;
-    font-size: 3.6rem;
+    font-size: 2.6rem;
     margin: 3.5vmin 0 3.8vmin;
     text-transform: uppercase;
     text-align: center;
@@ -281,15 +281,18 @@ body {
 .path-pages {
     background-color: #d8d5d0;
     text-align: center;
-    text-transform: uppercase;
     font-family: 'PT Sans', sans-serif;
-    font-size: 1.2rem;
-    padding: 22px 0;
+    font-size: 0.9rem;
+    padding: 10px 0;
     margin-top: 6px;
 }
 
+.path-pages a {
+    font-weight: 700;
+}
+
 .path-pages a::after {
-    content: '>';
+    content: '/';
     padding-left: 6px;
     color: #4d4d4d;
 }
@@ -391,6 +394,7 @@ body {
     display: none;
     width: 180px;
     line-height: normal;
+    text-transform: none;
 }
 
 .menu-dropdown ul li{
@@ -415,6 +419,52 @@ body {
     bottom: -6px;
     left: 0;
 }
+
+.fixed-header.sticky {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #d8d5d0;
+    z-index: 100;
+    padding-bottom: 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+    -webkit-animation: move .4s;
+        animation: move .4s;
+}
+
+@keyframes move {
+    from {
+        top: -130px;
+      }
+      to { 
+        top: 0; 
+      }  
+}
+
+.fixed-header.sticky .logo {
+    margin: 8px auto 0;
+}
+
+.fixed-header.sticky .logo>img {
+    width: 40%;
+}
+
+.fixed-header.sticky .logo>span {
+    font-size: 0.7rem;
+    display: block;
+    margin-top: 0;
+}
+
+.fixed-header.sticky .top-menu {
+    margin-top: 20px;
+}
+
+.fixed-header.sticky .language {
+    top: 34px;
+}
+
+/* .header-top.sticky */
 
 .first-screen-index {
     width: 80%;
@@ -447,7 +497,7 @@ body {
 }
 
 .section-about-us__desc>p {
-    font-size: 1.875rem;
+    font-size: 1.3rem;
     line-height: normal;
     text-align: left;
 }
@@ -597,12 +647,12 @@ body {
     margin-left: 10%;
     text-align: center;
     font-family: 'PT Sans', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     line-height: normal;
 }
 
 .story-success__desc>p {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 700;
     color: #85bd46;
@@ -631,7 +681,7 @@ body {
 }
 
 .story-success__info {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     line-height: normal;
     margin-left: 20px;
 }
@@ -639,7 +689,7 @@ body {
 .link-details {
     text-align: right;
     color: #85bd46;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     text-transform: uppercase;
     font-family: 'PT Sans', sans-serif;
@@ -649,8 +699,8 @@ body {
 }
 
 .link-details>span {
-    width: 50px;
-    height: 5px;
+    width: 44px;
+    height: 4px;
     background-color: #85bd46;
     display: inline-block;
     margin-bottom: 6px;
@@ -713,7 +763,7 @@ body {
 
 .services__info > h4 {
     font-family: 'PT Sans', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
@@ -721,7 +771,7 @@ body {
 }
 
 .services__info > p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: 'PT Sans', sans-serif;
     height: 36%;
     overflow: hidden;
@@ -733,7 +783,7 @@ body {
     bottom: 20px;
     right: 2.4vmin;
     font-family: 'PT Sans', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: right;
     font-weight: 700;
     text-transform: uppercase;
@@ -755,15 +805,16 @@ body {
 .footer-title {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.9rem;
+    font-size: 1.4rem;
     font-family: 'PT Sans', sans-serif;
     margin-bottom: 28px;
 }
 
 .call-us,
 .footer-menu {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'PT Sans', sans-serif;
+    line-height: normal;
 }
 
 .call-us > li {
@@ -779,7 +830,6 @@ body {
 
 .footer-menu {
     text-transform: uppercase;
-    line-height: normal;
 }
 
 .footer-menu > li {
@@ -801,7 +851,7 @@ body {
 }
 
 .social-link svg {
-    width: 48px;
+    width: 44px;
     transition: fill .4s;
     -webkit-transition: fill .4s;
     -moz-transition: fill .4s;
@@ -814,7 +864,6 @@ body {
 }
 
 .footer-text {
-    font-size: 1.8rem;
     text-transform: uppercase;
     font-family: 'PT Sans', sans-serif;
     margin-top: 26px;
@@ -830,6 +879,7 @@ body {
     font-size: 1.5rem;
     line-height: normal;
     padding: 0 3.64vw;
+    text-align: justify;
 }
 
 .about-us > p span {
@@ -841,19 +891,10 @@ body {
     margin-top: 36px;
 }
 
-@media only screen and (max-width: 1599px) {
+/* page article */
 
-    .section-about-us__desc>p {
-        font-size: 1.8rem;
-    }
-
-    .story-success__info {
-        font-size: 1.7rem;
-    }
-
-    .story-success__desc>p {
-        font-size: 2rem;
-    }
+.open-article {
+    width: 100%;
 }
 
 @media only screen and (max-width: 1199.8px) {
@@ -871,7 +912,7 @@ body {
     }
 
     .section-about-us__desc>p {
-        font-size: 1.375rem;
+        font-size: 1.175rem;
     }
 
     .event__date {
@@ -885,15 +926,14 @@ body {
     .story-success__desc {
         width: 100%;
         margin-left: 0;
-        font-size: 1.375rem;
     }
 
     .story-success__info {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .link-details {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .link-details>span {
@@ -911,7 +951,7 @@ body {
     }
 
     .services__info > h4 {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         margin-bottom: 12px;
     }
 
@@ -931,7 +971,7 @@ body {
     }
 
     .footer-title {
-        font-size: 1.375rem;
+        font-size: 1.2rem;
         margin-bottom: 20px;
     }
 
@@ -940,11 +980,10 @@ body {
     }
 
     .social-link svg {
-        width: 38px;
+        width: 34px;
     }
 
     .footer-text {
-        font-size: 1rem;
         margin-top: 26px;
     }
 }
@@ -981,7 +1020,7 @@ body {
     }
 
     .story-success__desc>p {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     .slick-dots {
         margin-top: 0;
@@ -1166,7 +1205,6 @@ body {
 
     .story-success__info {
         margin-left: 0;
-        font-size: 1.3rem;
         margin-top: 12px;
     }
 
@@ -1175,7 +1213,6 @@ body {
     }
 
     .footer-title {
-        font-size: 1.3rem;
         margin-top: 20px;
     }
 }
