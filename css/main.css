@@ -1093,6 +1093,32 @@ body {
         align-items: center;
     }
 
+    .fixed-header.sticky {
+        padding-bottom: 0;
+    }
+    
+    .fixed-header.sticky .logo {
+        margin: 8px 0 0;
+    }
+    
+    .fixed-header.sticky .logo>img {
+        width: 40%;
+    }
+    
+    .fixed-header.sticky .logo>span {
+        font-size: 0.7rem;
+        display: block;
+        margin-top: 0;
+    }
+    
+    .fixed-header.sticky .top-menu {
+        margin-top: 0;
+    }
+    
+    .fixed-header.sticky .language {
+        top: 20px;
+    }
+
     /*button menu*/
     .menu-btn{
         height: 40px;
