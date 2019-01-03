@@ -1,14 +1,14 @@
-/* @font-face {
+@font-face {
 	font-family: 'PT Sans';
-	src: url(/fonts/PT_Sans/PT_Sans-Web-Bold.ttf);
+	src: url(../fonts/PT_Sans/PT_Sans-Web-Bold.ttf);
 	font-weight: 700;
 }
 
 @font-face {
 	font-family: 'PT Sans';
-	src: url(/fonts/PT_Sans/PT_Sans-Web-Regular.ttf);
+	src: url(../fonts/PT_Sans/PT_Sans-Web-Regular.ttf);
 	font-weight: 400;
-} */
+}
 
 html,
 body,
@@ -234,6 +234,14 @@ body {
     margin-bottom: 35px;
 }
 
+.title-page {
+    font-weight: 700;
+    font-size: 3.6rem;
+    margin: 3.5vmin 0 3.8vmin;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 /* style dots slick */
 .slick-track {
     padding-bottom: 25px;
@@ -268,6 +276,29 @@ body {
 .slick-slide:focus {
     outline: none;
 }
+
+/* path-pages  */
+.path-pages {
+    background-color: #d8d5d0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2rem;
+    padding: 22px 0;
+    margin-top: 6px;
+}
+
+.path-pages a::after {
+    content: '>';
+    padding-left: 6px;
+    color: #4d4d4d;
+}
+
+.path-pages a:hover {
+    color: #85bd46;
+}
+/* path-pages  */
+
 
 /* header */
 
@@ -472,10 +503,10 @@ body {
 .event__img>img {
     width: 100%;
     transition: transform 0.4s;
-    -webkit-transition: transform 0.4s ;
-    -moz-transition: transform 0.4s ;
-    -ms-transition: transform 0.4s ;
-    -o-transition: transform 0.4s ;
+    -webkit-transition: transform 0.4s;
+    -moz-transition: transform 0.4s;
+    -ms-transition: transform 0.4s;
+    -o-transition: transform 0.4s;
 }
 
 .event:hover .event__img>img {
@@ -789,6 +820,27 @@ body {
     margin-top: 26px;
 }
 
+/* page about-us */
+.about-us {
+    width: 100%;
+    margin-bottom: 11vmin;
+}
+
+.about-us > p {
+    font-size: 1.5rem;
+    line-height: normal;
+    padding: 0 3.64vw;
+}
+
+.about-us > p span {
+    color: #85bd46;
+}
+
+.about-us > img {
+    width: 100%;
+    margin-top: 36px;
+}
+
 @media only screen and (max-width: 1599px) {
 
     .section-about-us__desc>p {
@@ -812,6 +864,10 @@ body {
     .title-section {
         font-size: 2.25rem;
         margin-bottom: 20px;
+    }
+
+    .title-page {
+        font-size: 2.6rem;
     }
 
     .section-about-us__desc>p {
@@ -1054,12 +1110,12 @@ body {
             z-index: 10;
             overflow: scroll;
             margin-top: 0;
-            font-size: 1.125rem;
+            font-size: 1.25rem;
             padding: 26px 0;
     }
 
     .top-menu > li {
-        margin: 14px 0;
+        margin: 18px 0;
     }
 
     .menu-dropdown ul {
@@ -1162,5 +1218,9 @@ body {
 
     .services__info > p {
         line-height: normal;
+    }
+
+    .about-us > p {
+        font-size: 2rem;
     }
 }
