@@ -228,7 +228,7 @@ body {
 
 .title-section {
     font-weight: 700;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     color: #4d4d4d;
     text-transform: uppercase;
     margin-bottom: 35px;
@@ -236,7 +236,7 @@ body {
 
 .title-page {
     font-weight: 700;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     margin: 3.5vmin 0 3.8vmin;
     text-transform: uppercase;
     text-align: center;
@@ -994,18 +994,134 @@ body {
     fill: #85bd46;
 }
 
+/* page coaches */
+.coaches {
+    padding-bottom: 10.16vmin;
+}
+
+.coach {
+    box-shadow: 0 0 16px rgba(0, 0, 0, .21);
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 30px;
+}
+
+.coach__img {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coach__img:hover >img {
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+}
+
+.coach__img > img {
+    width: 100%;
+    transition: transform .4s;
+    -webkit-transition: transform .4s;
+    -moz-transition: transform .4s;
+    -ms-transition: transform .4s;
+    -o-transition: transform .4s;
+}
+
+.coach__body {
+    padding: 0 30px;
+    margin: 24px 0;
+    height: 148px;
+    overflow: hidden;
+    text-align: center;
+    line-height: normal;
+}
+
+.coach__body h3{
+    font-family: inherit;
+    font-weight: 700;
+    color: #84be44;
+    margin-bottom: 2.9vmin;
+}
+
+.coach__body p {
+    font-size: 1.2rem;
+    font-family: inherit;
+}
+
+.coach__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 36px 30px;
+}
+
+.coach__footer a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    transition: padding .4s;
+    -webkit-transition: padding .4s;
+    -moz-transition: padding .4s;
+    -ms-transition: padding .4s;
+    -o-transition: padding .4s;
+}
+
+.coach__footer a:hover {
+    color: #85bd46;
+    padding-left: 36px;
+}
+
+.coach__footer a::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #85bd46;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 0;
+    transition: width .2s ;
+    -webkit-transition: width .2s ;
+    -moz-transition: width .2s ;
+    -ms-transition: width .2s ;
+    -o-transition: width .2s ;
+}
+
+.coach__footer a:hover::before {
+    width: 30px;
+}
+
+/* .coach__footer .social-link li{
+    margin: 0;
+    margin-left: 10px;
+}
+
+.coach__footer .social-link li a>svg {
+    width: 20px;
+    fill: #767676;
+}
+
+.coach__footer .social-link li a>svg:hover {
+    fill: #85bd46;
+} */
+
 @media only screen and (max-width: 1199.8px) {
     .section-about-us {
         padding: 40px 0;
     }
 
     .title-section {
-        font-size: 2.25rem;
+        font-size: 2rem;
         margin-bottom: 20px;
     }
 
     .title-page {
-        font-size: 2.6rem;
+        font-size: 2.2rem;
     }
 
     .section-about-us__desc>p {
@@ -1086,6 +1202,20 @@ body {
     
     .open-article__title {
         width: auto;
+    }
+    
+    .coach__body {
+        padding: 0 20px;
+        margin: 18px 0;
+        height: 138px;
+    }
+    
+    .coach__body h3{
+        margin-bottom: 2.7vmin;
+    }
+    
+    .coach__footer {
+        padding: 0 20px 26px 20px;
     }
 }
 
@@ -1207,6 +1337,12 @@ body {
     .open-article p,
     .open-article ul {
         font-size: 1.15rem;
+    }
+
+    .coach__body {
+        padding: 0 16px;
+        margin: 14px 0;
+        height: 118px;
     }
 }
 
@@ -1412,6 +1548,21 @@ body {
 
     .services__info a {
         right: 35px;
+    }
+
+    .coach {
+        width: 340px;
+        margin: 0 auto 20px;
+    }
+
+    .coach__img {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .coach {
+        width: 100%;
     }
 }
 
