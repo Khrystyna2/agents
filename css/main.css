@@ -312,7 +312,7 @@ body {
     background-color: #eeeeee;
     height: 100%;
     text-align: center;
-    margin: 0 6px;
+    margin: 0 4px;
     border: none;
     line-height: normal;
     color: #5d5d5d;
@@ -346,7 +346,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     width: 60px;
-    background-size: 50%;
+    background-size: 50% 60%;
     transition: .3s;
     -webkit-transition: .3s;
     -moz-transition: .3s;
@@ -1183,37 +1183,18 @@ body {
     width: 30px;
 }
 
-/* .coach__footer .social-link li{
-    margin: 0;
-    margin-left: 10px;
-}
-
-.coach__footer .social-link li a>svg {
-    width: 20px;
-    fill: #767676;
-}
-
-.coach__footer .social-link li a>svg:hover {
-    fill: #85bd46;
-} */
-
 /* page story-success */
 .storySuccess {
     box-shadow: 0 2px 7px rgba(0, 0, 0, .55);
     margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-}
-
-.storySuccess .col-sm-4.col-lg-3 {
-    padding-left: 0;
 }
 
 .storySuccess__img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: auto;
+    height: 260px;
     overflow: hidden;
 }
 
@@ -1226,8 +1207,8 @@ body {
 }
 
 .storySuccess__img > img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     transition: transform .3s;
     -webkit-transition: transform .3s;
     -moz-transition: transform .3s;
@@ -1236,11 +1217,11 @@ body {
 }
 
 .storySuccess__desc {
-    padding: 0 2.1vmin;
+    padding: 0 3.2vmin 0 1.8vmin;
     font-family: 'PT Sans', sans-serif;
 }
 
-.storySuccess__desc > h3 {
+.storySuccess__desc > h4 {
     font-family: inherit;
     color: #85bd46;
     font-weight: 700;
@@ -1248,14 +1229,14 @@ body {
     margin-bottom: 2.66vmin;
 }
 
-.storySuccess__desc > h3 span {
+.storySuccess__desc > h4 span {
     text-transform: none;
 }
 
 .storySuccess__desc > p {
     font-size: 1.3rem;
     line-height: normal;
-    height: 140px;
+    height: 136px;
     overflow: hidden;
 }
 
@@ -1406,6 +1387,23 @@ body {
     .coach__footer {
         padding: 0 20px 26px 20px;
     }
+
+    .storySuccess__img {
+        height: 236px;
+    }
+
+    .storySuccess__desc {
+        padding: 0 3.2vmin 0 0;
+    }
+
+    .storySuccess__desc > h4 {
+        margin-bottom: 16px;
+    }
+
+    .storySuccess__desc > p {
+        height: 106px;
+    }
+    
 }
 
 @media only screen and (max-width: 991.8px) {
@@ -1535,6 +1533,15 @@ body {
     }
     .coach__footer a {
         font-size: 1.2rem;
+    }
+
+    .storySuccess__img {
+        height: 220px;
+    }
+
+    .storySuccess__desc > p {
+        height: 120px;
+        font-size: 1.1rem;
     }
 }
 
@@ -1727,6 +1734,26 @@ body {
     .open-article .social-link li a > svg {
         width: 16px;
     }
+
+    .storySuccess__img {
+        height: 226px;
+    }
+
+    .storySuccess__desc > p {
+        height: 100px;
+    }
+
+    .storySuccess__desc > h4{
+        margin-bottom: 10px;
+    }
+
+    .storySuccess__desc > h4 span {
+        display: block;
+    }
+
+    .storySuccess .col-12.col-sm-7.col-md-8.col-lg-9 {
+        padding-left: 0;
+    }
 }
 
 @media only screen and (max-width: 575.8px) {
@@ -1751,11 +1778,56 @@ body {
     .coach__img {
         height: auto;
     }
+
+    .storySuccess .col-12.col-sm-7.col-md-8.col-lg-9 {
+        padding-left: 15px;
+    }
+
+    .storySuccess__img{
+        height: auto;
+        width: 290px;
+        margin: 20px auto 0;
+    }
+
+    .storySuccess__img > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .storySuccess__desc {
+        padding: 20px;
+    }
+
+    .storySuccess__desc > h4 span {
+        display: inline-block;
+    }
+
+    .storySuccess__desc > p {
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 400px) {
     .coach {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .page-link.prev, .page-link.next {
+        width: 34px;
+    }
+
+    .page-item:last-child .page-link {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .storySuccess__img{
+        height: auto;
+        width: 100%;
+        margin: 0 auto 0;
     }
 }
 
@@ -1786,5 +1858,11 @@ body {
 
     .about-us > p {
         font-size: 2rem;
+    }
+    .storySuccess__img {
+        height: 380px;
+    }
+    .storySuccess__desc > p {
+        height: 174px;
     }
 }
