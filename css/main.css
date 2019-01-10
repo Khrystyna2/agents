@@ -1391,14 +1391,13 @@ main {
     border-bottom: 1px solid #b8b8b8;
     padding: 16px 40px;
     position: relative;
-    cursor: pointer;
 }
 
 .target-groups .accordion .accordion-items:last-of-type {
     border: none;
 }
 
-.target-groups .accordion .accordion-items .arrow-down {
+.target-groups .accordion .accordion-items h2 .arrow-down {
     position: absolute;
     top: 12px;
     right: 40px;
@@ -1410,7 +1409,7 @@ main {
     background-size: 80% 80%;
 }
 
-.target-groups .accordion .accordion-items.open .arrow-down {
+.target-groups .accordion .accordion-items h2.open .arrow-down {
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -1422,8 +1421,8 @@ main {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.6rem;
-    width: 90%;
     cursor: pointer;
+    width: 95%;
 }
 
 .target-groups .accordion .accordion-items article {
@@ -1577,7 +1576,7 @@ main {
         padding: 12px 26px;
     }
     
-    .target-groups .accordion .accordion-items .arrow-down {
+    .target-groups .accordion .accordion-items h2 .arrow-down {
         right: 30px;
         width: 30px;
         height: 30px;
@@ -1970,7 +1969,7 @@ main {
         padding: 12px 18px;
     }
     
-    .target-groups .accordion .accordion-items .arrow-down {
+    .target-groups .accordion .accordion-items h2 .arrow-down {
         right: 12px;
         width: 26px;
         height: 26px;

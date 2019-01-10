@@ -9,8 +9,9 @@ $(document).ready(function() {
         dots: true
     });
 
-    $('.menu-dropdown').on('click', function() {
-		$(this).children('ul').slideToggle();
+    $('.menu-dropdown>span').click(function() {
+        $(this).next().next('ul').slideToggle();
+        $(this).closest('li').siblings('li').find('ul').slideUp();        
     });
     
     $('.menu-btn').on('click', function() {
@@ -33,8 +34,8 @@ $(document).ready(function() {
     });
 
     //accordion
-    $('.accordion>li').click(function () {
-        $(this).toggleClass('open').find('article').slideToggle();
+    $('.accordion>li>h2').click(function () {
+        $(this).toggleClass('open').next('article').slideToggle();
         $(this).closest('li').siblings('li').removeClass('open').find('article').slideUp();
     });
 
