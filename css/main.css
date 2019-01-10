@@ -163,6 +163,10 @@ body {
     background-color: #fff;
 }
 
+main {
+    min-height: 62vh;
+}
+
 .btn-white-border,
 .btn-border-green {
     font-family: 'PT Sans', sans-serif;
@@ -1325,7 +1329,6 @@ body {
     font-size: 1.3rem;
     line-height: normal;
     font-family: inherit;
-    text-align: justify;
 }
 
 /* page events */
@@ -1374,6 +1377,72 @@ body {
 
 .events .event {
     margin-bottom: 30px;
+}
+
+/* page target-groups */
+
+.target-groups {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .55);
+    margin-bottom: 7.5vmin;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.target-groups .accordion .accordion-items {
+    border-bottom: 1px solid #b8b8b8;
+    padding: 16px 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.target-groups .accordion .accordion-items:last-of-type {
+    border: none;
+}
+
+.target-groups .accordion .accordion-items .arrow-down {
+    position: absolute;
+    top: 12px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../icons/arrow-down.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+}
+
+.target-groups .accordion .accordion-items.open .arrow-down {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.target-groups .accordion .accordion-items h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6rem;
+    width: 90%;
+    cursor: pointer;
+}
+
+.target-groups .accordion .accordion-items article {
+    margin: 16px 0;
+    display: none;
+}
+
+.target-groups .accordion .accordion-items article p {
+    line-height: normal;
+    margin-bottom: 14px;
+}
+
+.target-groups .accordion .accordion-items article ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+.target-groups .accordion .accordion-items article ol li {
+    margin-bottom: 12px;
 }
 
 @media only screen and (max-width: 1199.8px) {
@@ -1502,6 +1571,32 @@ body {
 
     .open-story-success__img {
         width: 30.58vmin;
+    }
+    
+    .target-groups .accordion .accordion-items {
+        padding: 12px 26px;
+    }
+    
+    .target-groups .accordion .accordion-items .arrow-down {
+        right: 30px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .target-groups .accordion .accordion-items h2 {
+        font-size: 1.4rem;
+    }
+    
+    .target-groups .accordion .accordion-items article {
+        margin: 10px 0;
+    }
+    
+    .target-groups .accordion .accordion-items article p {
+        margin-bottom: 12px;
+    }
+    
+    .target-groups .accordion .accordion-items article ol li {
+        margin-bottom: 10px;
     }
     
 }
@@ -1870,6 +1965,28 @@ body {
     .second-menu li {
         margin: 0 12px;
     }
+
+    .target-groups .accordion .accordion-items {
+        padding: 12px 18px;
+    }
+    
+    .target-groups .accordion .accordion-items .arrow-down {
+        right: 12px;
+        width: 26px;
+        height: 26px;
+    }
+
+    .target-groups .accordion .accordion-items h2 {
+        font-size: 1.2rem;
+    }
+    
+    .target-groups .accordion .accordion-items article p {
+        margin-bottom: 10px;
+    }
+    
+    .target-groups .accordion .accordion-items article ol li {
+        margin-bottom: 8px;
+    }
 }
 
 @media only screen and (max-width: 575.8px) {
@@ -1941,6 +2058,10 @@ body {
 
     .second-menu li a {
         padding: 6px 0;
+    }
+
+    .target-groups .accordion .accordion-items h2 {
+        font-size: 1.1rem;
     }
 }
 

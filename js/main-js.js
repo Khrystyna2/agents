@@ -32,4 +32,10 @@ $(document).ready(function() {
         }
     });
 
+    //accordion
+    $('.accordion>li').click(function () {
+        $(this).toggleClass('open').find('article').slideToggle();
+        $(this).closest('li').siblings('li').removeClass('open').find('article').slideUp();
+    });
+
 });
