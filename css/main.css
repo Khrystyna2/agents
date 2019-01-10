@@ -1329,6 +1329,7 @@ main {
     font-size: 1.3rem;
     line-height: normal;
     font-family: inherit;
+    text-align: justify;
 }
 
 /* page events */
