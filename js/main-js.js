@@ -5,7 +5,7 @@ $(document).ready(function() {
         arrows: false,
         // fade: true,
         infinite: true,
-        // autoplay: true,
+        autoplay: true,
         dots: true
     });
 
@@ -14,6 +14,7 @@ $(document).ready(function() {
         $(this).closest('li').siblings('li').find('ul').slideUp();        
     });
     
+    // menu mobile screen
     $('.menu-btn').on('click', function() {
 		$(this).toggleClass('menu-btn_active');
 		$('.top-menu').slideToggle();
